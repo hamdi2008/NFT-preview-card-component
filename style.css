@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);   
+    --Cyan: hsl(178, 100%, 50%);
+    --main-darkblue: hsl(217, 54%, 11%);
+    --card-darkblue: hsl(216, 50%, 16%);
+    --line-darkblue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    
+
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125rem; 
+    background-color: var(--main-darkblue);
+    color: var(--Softblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+.card-img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+h1{
+    font-size: 1.5rem;
+    color: var(--White);
+    margin: .7em 0;
+}
+span{
+    font-size: 1rem;
+}
+.card-body{
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+.card-container{
+    background-color: var(--card-darkblue);
+    padding: 1em;
+    border-radius: 10px;
+    width: 90%;
+   
+}
+.card-info,
+.card-footer{
+    display: flex;
+}
+.card-info{
+    justify-content: space-between;
+    margin: .5em 0;
+}
+.card-info .one,
+.card-info .two{
+    gap: .3em;
+}
+.card-info .one span{
+    color: var(--Cyan);
+}
+.card-line{
+    border-bottom: 1px solid var(--line-darkblue);
+    margin: 1.5em 0;
+}
+.card-footer{
+    gap: .7em;
+}
+.card-footer img{
+    max-width: 10%;
+}
+.author span{
+    color: var(--Cyan);
+}
+footer{
+    margin: 1em 0;
+    color: var(--White);
+    
+}
+footer p {
+    margin: .5em 0;
+}
+footer a{
+    color: var(--Cyan);
+}
+
+
+@media (min-width: 800px) {
+    body{
+        margin: 5em 0;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    .card-body{
+        font-size: 1.3rem;
+    }
+    .card-container{
+        width: 30%;
+    }
+    
+}
